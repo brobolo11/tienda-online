@@ -7,9 +7,44 @@ body {
 }
 
 #tituloPagina{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 #logosHeader{
     font-size: 1.4rem;
+}
+
+.contenedor{
+    background-image: url(images/fondo1.png);
+    background-size: cover;
+    width: 100%;
+    padding-top: 20%;
+    margin-bottom: 5%;
+}
+
+.contenedorCoche{
+    padding: 4%;
+}
+
+.texto1{
+    margin-top: -2%;
+}
+
+.texto1Titulo{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.modeloLetra{
+    font-size: 0.8rem;
+    color: rgb(104, 99, 99);
+    margin-top: 2%;
+}
+
+.tituloCoche{
+    font-size: 2rem;
+    margin-left: -25%;
+    margin-top: -4%;
+    display: flex;
+    margin-left: 1%;
 }

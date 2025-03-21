@@ -11,21 +11,127 @@
 <body>
     
     <header>
-        <div class="encabezado d-flex justify-content-around bg-light w-100">
-            <a href="index.html" class="text-dark text-decoration-none mt-4"><p>HOME</p></a>
-            <a href="index.html" class="text-dark text-decoration-none mt-4"><p>CURRENT STOCK</p></a>
-            <a href="index.html" class="text-dark text-decoration-none mt-4"><p>SELL YOUR CAR</p></a>
-            <a href="index.html" class="text-dark text-decoration-none mt-3" id="tituloPagina"><p>CROLEX</p></a>
-            <a href="index.html" class="text-dark text-decoration-none mt-4"><p>ABOUT US</p></a>
-            <a href="index.html" class="text-dark text-decoration-none mt-4"><p>CONTACT US</p></a>
-            
-            <div class="mt-3">
-                <i class="bi bi-person text-dark" id="logosHeader"></i>
-                <i class="bi bi-bag text-dark ms-3" id="logosHeader"></i>
+        <nav class="navbar navbar-expand-lg bg-light w-100">
+            <div class="container-fluid">
+                <!-- Botón hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div class="d-flex justify-content-around w-100">
+                        <a href="index.html" class="text-dark text-decoration-none mt-4"><p>HOME</p></a>
+                        <a href="stock.html" class="text-dark text-decoration-none mt-4"><p>CURRENT STOCK</p></a>
+                        <a href="sellCar.html" class="text-dark text-decoration-none mt-4"><p>SELL YOUR CAR</p></a>
+                        <a href="index.html" class="text-dark text-decoration-none mt-3" id="tituloPagina"><p>CROLEX</p></a>
+                        <a href="about.html" class="text-dark text-decoration-none mt-4"><p>ABOUT US</p></a>
+                        <a href="contact.html" class="text-dark text-decoration-none mt-4"><p>CONTACT US</p></a>
+                        
+                        <div class="mt-3">
+                            <i class="bi bi-person text-dark" id="logosHeader"></i>
+                            <i class="bi bi-bag text-dark ms-3" id="logosHeader"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class="contenedor"></div>
+
+        <div class="texto1 text-center">
+            <p class="texto1Titulo text-center text-dark">LUXURY CARS FOR SALE</p>
+            <p class="text-center">CROLEX es no de los principales concesionarios de automóviles de lujo de toda España, especializado en los automóviles de lujo más exclusivos y codiciados a la venta en cualquier parte del mundo.</p>
+            <P class="text-center">Con sede en Bouzas, en la ciudad de Vigo, seleccionamos los ejemplos más raros y nuevos de los principales fabricantes de automóviles de lujo y todos los automóviles que anunciamos están físicamente disponibles en nuestra sala de exposición.</P>
+            <P class="text-center">Aquí hay una selección de las marcas de lujo que ofrecemos a la venta.</P>
+        </div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/astonMartin.jpg" class="ms-3" alt="">
+                <p class="modeloLetra text-center ms-4">Modelo destacado: Aston Martin Vantage GT8</p>
+            </div>
+            <div class="textoCoche flex-row mt-5 p-3">   
+                <p class="tituloCoche text-center">ASTON MARTIN</p>
+                <p class="p-1">Un fabricante clásico de automóviles de lujo británico que existe desde hace más de 100 años y es mundialmente conocido por algunos de los automóviles más emblemáticos y reconocibles en la pantalla grande y en las pistas de carreras.</p>
+                <p class="p-1">Los modelos actuales que Aston Martin ofrece a la venta incluyen el DBS Superleggera, el DB11, el Vantage y el venerado DBX, el primer SUV fabricado por el legendario fabricante británico. Aston Martin también ha lanzado recientemente un hipercoche de edición limitada, en colaboración con Red Bull, llamado Aston Martin Valkyrie.</p>
+                <button class="bg-dark text-light p-2">VER ASTON MARTIN EN VENTA</button>
             </div>
         </div>
-        
-    </header>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/bugatti.jpg" class="ms-3" alt="">
+                <p class="modeloLetra text-center ms-4">Modelo destacado: Bugatti Veyron Grand Sport Vitesse</p>
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">BUGATTI</p>
+                <p class="p-1">Admirada desde hace mucho tiempo por sus diseños icónicos, la marca francesa Bugatti Automobiles cuenta con una rica historia. En los inicios del automovilismo, Bugatti fue uno de los equipos de carreras más exitosos de la historia, antes de desaparecer prácticamente tras la Segunda Guerra Mundial. En 1998, Volkswagen adquirió la marca Bugatti y la relanzó.</p>
+                <p class="p-1">Hoy en día, Bugatti es conocido por producir algunos de los coches más exclusivos que jamás hayan existido. El revolucionario Bugatti Veyron es quizás el coche más famoso de la era moderna, seguido por el Chiron, que ha batido más récords mundiales de velocidad. Otros modelos notables, y quizás incluso más exclusivos, de Bugatti incluyen el Divo y el Centodieci, cuya estética se inspiró vagamente en el EB110.</p>
+                <button class="bg-dark text-light p-2">VER BUGATTI EN VENTA</button>
+            </div>
+        </div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/ferrari.jpg" class="ms-3" alt="">
+                <p class="modeloLetra text-center ms-4">Modelo destacado: Ferrari LaFerrari</p>
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">FERRARI</p>
+                <p class="p-1">Ferrari, quizás la marca de coches más famosa de todas, sin duda en el mundo de los superdeportivos, cuenta con una increíble trayectoria en el automovilismo, además de haber producido algunos de los coches de carretera más importantes de todos los tiempos. Fundada originalmente en 1929 por Enzo Ferrari, no produjo su primer coche con la insignia Ferrari hasta 1947.</p>
+                <p class="p-1">Hoy en día, Ferrari sigue siendo una fuerza importante en la Fórmula Uno, sus autos clásicos se venden regularmente a precios exorbitantes, por múltiplos de millones, y todavía producen los autos modernos más buscados en el mundo, como el SP3 Daytona y el 812 Competizione.</p>
+                <button class="bg-dark text-light p-2">VER FERRARI EN VENTA</button>
+            </div>
+        </div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/lamborghini.jpg" class="ms-3" alt="">
+                <p class="modeloLetra text-center ms-4">Modelo destacado: Lamborghini Urus Performante</p>
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">LAMBORGHINI</p>
+                <p class="p-1">Este distintivo fabricante italiano de automóviles de lujo se fundó en 1963 para competir con marcas como Ferrari y Porsche. Inspirada en las corridas de toros, la marca se ha convertido en un símbolo de vanguardia gracias a sus extravagantes diseños y su rendimiento ultraespectacular.</p>
+                <p class="p-1">Hoy en día, Lamborghini pertenece al Grupo Volkswagen y se encuentra a la vanguardia de la industria de los superdeportivos, con modelos de enorme éxito como el Aventador y el Huracán. Más recientemente, Lamborghini ha incursionado con éxito en el mercado de los SUV con el lanzamiento del Urus.</p>
+                <button class="bg-dark text-light p-2">VER LAMBORGHINI EN VENTA</button>
+            </div>
+        </div>
+
+    </main>
+    
+
+    <footer class="piePagina bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>CROLEX</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="stock.html" class="text-light text-decoration-none">Current Stock</a></li>
+                        <li><a href="sellCar.html" class="text-light text-decoration-none">Sell Your Car</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-4 text-center mt-5">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                </div>
+
+                <div class="col-md-4 text-end mt-5">
+                    <p class="mb-0">&copy; 2025 CROLEX. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
