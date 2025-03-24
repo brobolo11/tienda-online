@@ -12,6 +12,7 @@ body {
 
 #logosHeader{
     font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .contenedor{
@@ -22,12 +23,30 @@ body {
     margin-bottom: 5%;
 }
 
+.contenedor2{
+    background-image: url(images/fondo2.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 25%;
+    margin-bottom: 5%;
+}
+
+.contenedor3{
+    background-image: url(images/fondo3.webp);
+    background-size: cover;
+    width: 100%;
+    padding-top: 40%;
+    margin-bottom: 5%;
+}
+
 .contenedorCoche{
     padding: 4%;
 }
 
 .texto1{
     margin-top: -2%;
+    width: 70%;
+    margin-left: 15%;
 }
 
 .texto1Titulo{
@@ -47,4 +66,60 @@ body {
     margin-top: -4%;
     display: flex;
     margin-left: 1%;
+}
+
+.contenedorAbout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    font-size: 0.8rem;
+    padding: 5%;
+    gap: 5%;
+}
+
+.contenedorAbout h4{
+    width: 100%;
+}
+
+.seccion{
+    gap: 5%;
+}
+
+.seccionModelo{
+    width: 25%;
+}
+
+.seccionModelo img{
+    height: 80%;
+    width: 100%;
+}
+
+.contenedorModelos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.seccionModelo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.seccionModelo img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 150px;
+}
+
+.seccionModelo a {
+    margin-top: 10px;
 }
