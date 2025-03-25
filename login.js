@@ -17,14 +17,12 @@ $(document).ready(function () {
                 success: function (response) {
                     const data = JSON.parse(response);
                     if (data.message) {
-                        // Mostrar mensaje de éxito
                         $("#modalMessageContent").text(data.message);
                         $("#messageModal").modal("show");
                         setTimeout(function () {
                             window.location.href = "index.html";
-                        }, 2000); // Redirigir después de 2 segundos
+                        }, 2000);
                     } else {
-                        // Mostrar mensaje de error
                         $("#modalMessageContent").text(data.error);
                         $("#messageModal").modal("show");
                     }
@@ -50,14 +48,12 @@ $(document).ready(function () {
                 success: function (response) {
                     const data = JSON.parse(response);
                     if (data.message) {
-                        // Mostrar mensaje de éxito
                         $("#modalMessageContent").text(data.message);
                         $("#messageModal").modal("show");
                         setTimeout(function () {
                             window.location.href = "login.html";
-                        }, 2000); // Redirigir después de 2 segundos
+                        }, 2000);
                     } else {
-                        // Mostrar mensaje de error
                         $("#modalMessageContent").text(data.error);
                         $("#messageModal").modal("show");
                     }

@@ -26,7 +26,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $(".bi-person").on("click", function () {
+    $("#logoLogin").on("click", function () {
         $.ajax({
             url: "logout.php",
             type: "GET",
@@ -35,6 +35,65 @@ $(document).ready(function () {
             },
             error: function (xhr, status, error) {
                 console.error("Error al cerrar sesión: ", error);
+            }
+        });
+    });
+
+    // Verificar sesión antes de redirigir a la cesta
+    $("#logoCesta").on("click", function () {
+        $.ajax({
+            url: "verificar-sesion.php",
+            type: "GET",
+            success: function (response) {
+                if (response === "1") {
+                    window.location.href = "cesta.html";
+                } else {
+                    alert("Debes iniciar sesión para ver tu cesta.");
+                    window.location.href = "login.html";
+                }
+            },
+            error: function () {
+                console.error("Error al verificar la sesión.");
+            }
+        });
+    });
+});
+
+$(document).ready(function () {
+    $(".añadirCesta").on("click", function () {
+        const carName = $(this).data("car");
+
+        // Peticion AJAX para obtener el username de la sesión
+        $.ajax({
+            url: "getSession.php",
+            type: "GET",
+            dataType: "json",
+            success: function (response) {
+                if (response.username) {
+                    // Si el usuario está logueado, enviar datos a mongo
+                    $.ajax({
+                        url: "añadirCarrito.php",
+                        type: "POST",
+                        data: {
+                            carName: carName
+                        },
+                        success: function (data) {
+                            if (data.success) {
+                                alert("Coche añadido a la cesta correctamente.");
+                            } else {
+                                alert("Error al añadir a la cesta.");
+                            }
+                        },
+                        error: function (err) {
+                            alert("Error al añadir a la cesta.");
+                        }
+                    });
+                } else {
+                    alert("Debes iniciar sesión para añadir un coche a la cesta.");
+                }
+            },
+            error: function () {
+                alert("Error al obtener la sesión del usuario.");
             }
         });
     });

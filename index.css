@@ -10,7 +10,7 @@ body {
     font-size: 1.7rem;
 }
 
-#logosHeader{
+#logoLogin, #logoCesta{
     font-size: 1.4rem;
     cursor: pointer;
 }
@@ -144,4 +144,19 @@ body {
 
 .seccionModelo a {
     margin-top: 10px;
+}
+
+#urusCesta,
+#huracanCesta,
+#aventadorCesta,
+#db12Cesta,
+#dbxCesta,
+#vantageCesta,
+#veyronCesta,
+#tourbillonCesta,
+#voitureCesta,
+#spiderCesta,
+#romaCesta,
+#competizioneCesta{
+    margin-left: 35%;
 }

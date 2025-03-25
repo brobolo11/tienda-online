@@ -1,12 +1,12 @@
 <?php
 require 'config.php';
 session_start();
+session_regenerate_id(true);
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    // Buscar usuario en la base de datos
     $user = $collection->findOne(["username" => $username]);
 
     if ($user && $user["password"] === $password) {
