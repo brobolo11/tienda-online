@@ -1,10 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Botón de usuario
-    const userIcon = document.querySelector(".bi-person");
-
-    if (userIcon) {
-        userIcon.addEventListener("click", function () {
-            window.location.href = "logout.php";
+$(document).ready(function () {
+    $(".bi-person").on("click", function () {
+        $.ajax({
+            url: "logout.php",
+            type: "GET",
+            success: function (data) {
+                window.location.href = "login.html";
+            },
+            error: function (xhr, status, error) {
+                console.error("Error al cerrar sesión: ", error);
+            }
         });
-    }
+    });
 });

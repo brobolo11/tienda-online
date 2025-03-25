@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light w-100">
+            <div class="container-fluid">    
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div class="d-flex justify-content-around w-100">
+                        <a href="index.html" class="text-dark text-decoration-none mt-4"><p>HOME</p></a>
+                        <a href="modelos.html" class="text-dark text-decoration-none mt-4"><p>MODELOS</p></a>
+                        <a href="index.html" class="text-dark text-decoration-none mt-3" id="tituloPagina"><p>CROLEX</p></a>
+                        <a href="about.html" class="text-dark text-decoration-none mt-4"><p>ABOUT US</p></a>
+                        
+                        <div class="mt-3">
+                            <i class="bi bi-person text-dark" id="logosHeader"></i>
+                            <i class="bi bi-bag text-dark ms-3" id="logosHeader"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class="contenedor4"></div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/db12.jpg" class="ms-3" alt="">
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">ASTON MARTIN DB12</p>
+                <p class="p-1">El Aston Martin DB12 es un gran turismo de lujo que fusiona la elegancia clásica con la potencia moderna. Equipado con un motor V8 biturbo de 4.0 litros, el DB12 ofrece un rendimiento excepcional que asegura una conducción dinámica y emocionante. Con un diseño sofisticado, interiores lujosos y tecnología avanzada, este vehículo está destinado a quienes buscan un equilibrio perfecto entre confort y agilidad en la carretera. Ideal para los conductores que aprecian tanto el lujo refinado como las altas prestaciones.</p>
+                <button class="text-light p-2 text-decoration-none btn-dark btn" id="db12">VER ASTON MARTIN DB12</button>
+            </div>
+        </div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/dbx.jpg" class="ms-3" alt="">
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">ASTON MARTIN DBX</p>
+                <p class="p-1">El Aston Martin DBX es el primer SUV de lujo de la marca, combinando el rendimiento excepcional de Aston Martin con la versatilidad de un vehículo todoterreno. Equipado con un motor V8 biturbo de 4.0 litros, el DBX ofrece un impresionante equilibrio entre potencia, confort y tecnología avanzada. Su diseño elegante, unido a una construcción de lujo y una experiencia de conducción dinámica, lo convierte en el SUV perfecto para quienes buscan lo mejor en estilo, rendimiento y versatilidad.</p>
+                <button class="text-light p-2 text-decoration-none btn-dark btn" id="dbx">VER ASTON MARTIN DBX</button>
+            </div>
+        </div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/vantage.jpg" class="ms-3" alt="">
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">ASTON MARTIN VANTAGE ROADSTER</p>
+                <p class="p-1">El Aston Martin Vantage Roadster es un descapotable de alto rendimiento que combina elegancia, deportividad y emoción pura al volante. Con un diseño agresivo y aerodinámico, este modelo ofrece una experiencia de conducción única con su motor V8 biturbo, chasis ligero y un techo retráctil ultrarrápido. Ideal para quienes buscan lujo, potencia y el placer de conducir a cielo abierto.</p>
+                <button class="text-light p-2 text-decoration-none btn-dark btn" id="vantage">VER ASTON MARTIN VANTAGE ROADSTER</button>
+            </div>
+        </div>
+
+        <!-- Modal DB12 -->
+        <div class="modal fade" id="db12Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="db12ModalLabel">Aston Martin DB12</h5>
+                        <button type="button" class="btn-close" id="db12" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/db12.jpg" class="img-fluid mb-3 ms-5" alt="Aston Martin DB12">
+                        
+                        <h6>Motor y Rendimiento</h6>
+                        <ul>
+                            <li>Motor V8 de 4.0 litros biturbo</li>
+                            <li><strong>Potencia:</strong> 680 CV (675 hp) @ 6,500 rpm</li>
+                            <li><strong>Torque:</strong> 700 Nm @ 2,000-5,000 rpm</li>
+                            <li><strong>Transmisión:</strong> Automática de 8 velocidades</li>
+                            <li><strong>0-100 km/h:</strong> 3.5 segundos</li>
+                            <li><strong>Velocidad máxima:</strong> 325 km/h</li>
+                        </ul>
+        
+                        <h6>Diseño y Aerodinámica</h6>
+                        <ul>
+                            <li>Diseño elegante con líneas suaves y refinadas</li>
+                            <li>Carrocería de aluminio ligero y estructura de alta rigidez</li>
+                            <li>Frontal distintivo con parrilla en forma de “A” y faros LED</li>
+                            <li>Uso de fibra de carbono para optimizar peso y aerodinámica</li>
+                        </ul>
+        
+                        <h6>Tecnología y Confort</h6>
+                        <ul>
+                            <li>Tracción trasera con diferencial de deslizamiento limitado</li>
+                            <li>Modos de conducción: GT, Sport y Track</li>
+                            <li>Sistema de infoentretenimiento Aston Martin con pantalla táctil de 10 pulgadas</li>
+                            <li>Sonido premium opcional Bang & Olufsen</li>
+                            <li>Interior lujoso con cuero de alta calidad, madera y detalles en fibra de carbono</li>
+                        </ul>
+        
+                        <h6>Dimensiones y Peso</h6>
+                        <ul>
+                            <li><strong>Longitud:</strong> 4.75 metros</li>
+                            <li><strong>Anchura:</strong> 1.94 metros</li>
+                            <li><strong>Altura:</strong> 1.29 metros</li>
+                            <li><strong>Peso:</strong> 1,650 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal DBX -->
+        <div class="modal fade" id="dbxModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dbxModalLabel">Aston Martin DBX</h5>
+                        <button type="button" class="btn-close" id="dbx" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/dbx.jpg" class="img-fluid mb-3 ms-5" alt="Aston Martin DBX">
+                        
+                        <h6>Motor y Rendimiento</h6>
+                        <ul>
+                            <li>Motor V8 biturbo de 4.0 litros</li>
+                            <li><strong>Potencia:</strong> 550 CV (542 hp) @ 6,000 rpm</li>
+                            <li><strong>Torque:</strong> 700 Nm @ 2,000-5,000 rpm</li>
+                            <li><strong>Transmisión:</strong> Automática de 9 velocidades</li>
+                            <li><strong>0-100 km/h:</strong> 4.5 segundos</li>
+                            <li><strong>Velocidad máxima:</strong> 291 km/h</li>
+                        </ul>
+        
+                        <h6>Diseño y Aerodinámica</h6>
+                        <ul>
+                            <li>Estilo deportivo y elegante con un frente agresivo</li>
+                            <li>Carrocería de aluminio y fibra de carbono para reducir peso</li>
+                            <li>Techo panorámico de cristal para mayor luminosidad en el interior</li>
+                            <li>Diseño aerodinámico que mejora la estabilidad a altas velocidades</li>
+                        </ul>
+        
+                        <h6>Tecnología y Confort</h6>
+                        <ul>
+                            <li>Tracción integral con distribución de par para mejorar la estabilidad</li>
+                            <li>Modos de conducción: Terrain, GT, Sport y Custom</li>
+                            <li>Sistema de infoentretenimiento Aston Martin con pantalla táctil de 10,25 pulgadas</li>
+                            <li>Sonido premium opcional Bang & Olufsen</li>
+                            <li>Interior lujoso con cuero, Alcántara y detalles en fibra de carbono</li>
+                        </ul>
+        
+                        <h6>Dimensiones y Peso</h6>
+                        <ul>
+                            <li><strong>Longitud:</strong> 5.02 metros</li>
+                            <li><strong>Anchura:</strong> 1.99 metros</li>
+                            <li><strong>Altura:</strong> 1.68 metros</li>
+                            <li><strong>Peso:</strong> 2,245 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Modal VANTAGE -->
+        <div class="modal fade" id="vantageModal" tabindex="-1" aria-labelledby="vantageModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="vantageModalLabel">Aston Martin Vantage Roadster</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/vantage.jpg" class="img-fluid mb-3 ms-5" alt="Aston Martin Vantage Roadster">
+                        
+                        <h6>Motor y Rendimiento</h6>
+                        <ul>
+                            <li>Motor V8 biturbo de 4.0 litros</li>
+                            <li><strong>Potencia:</strong> 510 CV (503 hp) @ 6,000 rpm</li>
+                            <li><strong>Torque:</strong> 685 Nm @ 2,000-5,000 rpm</li>
+                            <li><strong>Transmisión:</strong> Automática de 8 velocidades o manual de 7 velocidades</li>
+                            <li><strong>0-100 km/h:</strong> 3.7 segundos</li>
+                            <li><strong>Velocidad máxima:</strong> 305 km/h</li>
+                        </ul>
+        
+                        <h6>Diseño y Aerodinámica</h6>
+                        <ul>
+                            <li>Estilo agresivo con una parrilla imponente y líneas aerodinámicas</li>
+                            <li>Techo retráctil de tela que se abre en solo 6.7 segundos</li>
+                            <li>Carrocería ligera de aluminio para mayor rendimiento</li>
+                            <li>Difusor trasero y alerón integrados para mejorar la estabilidad</li>
+                        </ul>
+        
+                        <h6>Tecnología y Confort</h6>
+                        <ul>
+                            <li>Sistema de tracción trasera con diferencial autoblocante</li>
+                            <li>Modos de conducción: Sport, Sport+ y Track</li>
+                            <li>Pantalla de infoentretenimiento de 8 pulgadas con Apple CarPlay</li>
+                            <li>Sonido premium Aston Martin Audio o Bang & Olufsen opcional</li>
+                            <li>Interior de lujo con cuero, Alcántara y opciones en fibra de carbono</li>
+                        </ul>
+        
+                        <h6>Dimensiones y Peso</h6>
+                        <ul>
+                            <li><strong>Longitud:</strong> 4.46 metros</li>
+                            <li><strong>Anchura:</strong> 1.94 metros</li>
+                            <li><strong>Altura:</strong> 1.27 metros</li>
+                            <li><strong>Peso:</strong> 1,628 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+    </main>
+    
+
+    <footer class="piePagina bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>CROLEX</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="stock.html" class="text-light text-decoration-none">Current Stock</a></li>
+                        <li><a href="sellCar.html" class="text-light text-decoration-none">Sell Your Car</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-4 text-center mt-5">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                </div>
+
+                <div class="col-md-4 text-end mt-5">
+                    <p class="mb-0">&copy; 2025 CROLEX. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="astonmartin.js"></script>
+
+
+</body>
+</html>

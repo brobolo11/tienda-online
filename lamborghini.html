@@ -6,19 +6,12 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
-    <title>Document</title>
 </head>
 <body>
     
     <header>
         <nav class="navbar navbar-expand-lg bg-light w-100">
-            <div class="container-fluid">
-                <!-- Botón hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
+            <div class="container-fluid">    
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <div class="d-flex justify-content-around w-100">
                         <a href="index.html" class="text-dark text-decoration-none mt-4"><p>HOME</p></a>
@@ -42,15 +35,38 @@
 
         <div class="contenedorCoche d-flex">
             <div class="imageCoche">
-                <img src="images/lamborghini.jpg" class="ms-3" alt="">
+                <img src="images/urus.jpg" class="ms-3" alt="">
             </div>
             <div class="textoCoche flex-row mt-4 p-3">
                 <p class="tituloCoche text-center">LAMBORGHINI URUS</p>
-                <p class="p-1">El Lamborghini Urus es un SUV de alto rendimiento con un motor V8 biturbo de 4.0 litros que genera 666 CV y 850 Nm de torque. Acelera de 0 a 100 km/h en solo 3.3 segundos, alcanzando una velocidad máxima de 305 km/h. Con tracción integral y modos de conducción adaptativos, ofrece una experiencia de manejo única. Su diseño agresivo, con llantas de hasta 23 pulgadas y detalles de lujo en el interior, lo convierten en un vehículo exclusivo y potente. Ideal para quienes buscan un SUV de lujo y alto rendimiento.</p>
+                <p class="p-1">El Lamborghini Urus es un SUV de alto rendimiento excepcional que combina la potencia de un superdeportivo con la versatilidad de un vehículo de lujo. Con un diseño exclusivo y tecnología de vanguardia, el Urus está diseñado para quienes buscan una experiencia de conducción inigualable, tanto en carretera como fuera de ella. Ideal para aquellos que desean lo mejor de ambos mundos: lujo y rendimiento.</p>
                 <button class="text-light p-2 text-decoration-none btn-dark btn" id="urus">VER LAMBORGHINI URUS</button>
             </div>
         </div>
 
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/huracan.jpg" class="ms-3" alt="">
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">LAMBORGHINI HURACAN</p>
+                <p class="p-1">El Lamborghini Huracán es un superdeportivo excepcional que ofrece un rendimiento sin igual, combinado con un diseño exclusivo y tecnología de vanguardia. Ideal para quienes buscan una experiencia de conducción inigualable.</p>
+                <button class="text-light p-2 text-decoration-none btn-dark btn" id="huracan">VER LAMBORGHINI HURACAN</button>
+            </div>
+        </div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/aventador.jpg" class="ms-3" alt="">
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">LAMBORGHINI AVENTADOR</p>
+                <p class="p-1">El Lamborghini Aventador es un superdeportivo emblemático que ofrece un rendimiento extraordinario, combinado con un diseño agresivo y una tecnología de vanguardia. Su potencia, precisión y estilo lo convierten en una verdadera obra maestra sobre ruedas, ideal para quienes buscan una experiencia de conducción extrema y exclusiva, donde cada aceleración es un verdadero desafío.</p>
+                <button class="text-light p-2 text-decoration-none btn-dark btn" id="aventador">VER LAMBORGHINI AVENTADOR</button>
+            </div>
+        </div>
+
+        <!-- Modal Urus -->
         <div class="modal fade" id="urusModal" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -59,7 +75,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="images/lamborghini.jpg" class="img-fluid mb-3 ms-5" alt="Lamborghini Urus">
+                        <img src="images/urus.jpg" class="img-fluid mb-3 ms-5" alt="Lamborghini Urus">
                         
                         <h6>Motor y Rendimiento</h6>
                         <ul>
@@ -99,6 +115,105 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal Huracán -->
+        <div class="modal fade" id="huracanModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="huracanModalLabel">Lamborghini Huracán</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/huracan.jpg" class="img-fluid mb-3 ms-5" alt="Lamborghini Huracán">
+                        
+                        <h6>Motor y Rendimiento</h6>
+                        <ul>
+                            <li>Motor V10 de 5.2 litros</li>
+                            <li><strong>Potencia:</strong> 640 CV (631 hp) @ 8,000 rpm</li>
+                            <li><strong>Torque:</strong> 600 Nm @ 6,500 rpm</li>
+                            <li><strong>Transmisión:</strong> Automática de 7 velocidades</li>
+                            <li><strong>0-100 km/h:</strong> 2.9 segundos</li>
+                            <li><strong>Velocidad máxima:</strong> 325 km/h</li>
+                        </ul>
+            
+                        <h6>Diseño y Aerodinámica</h6>
+                        <ul>
+                            <li>Diseño agresivo con un frente afilado y perfil bajo</li>
+                            <li>Llantas de hasta 20" con frenos carbocerámicos</li>
+                            <li>Alas traseras ajustables para mayor estabilidad a altas velocidades</li>
+                            <li>Escape de doble salida con sonido característico de Lamborghini</li>
+                        </ul>
+            
+                        <h6>Tecnología y Confort</h6>
+                        <ul>
+                            <li>Tracción integral y control vectorial de torque</li>
+                            <li>Modos de conducción: Strada, Sport, Corsa y Ego</li>
+                            <li>Pantalla táctil Lamborghini Infotainment System (LIS)</li>
+                            <li>Sonido premium opcional Bang & Olufsen</li>
+                            <li>Materiales de lujo como cuero, Alcántara y fibra de carbono</li>
+                        </ul>
+            
+                        <h6>Dimensiones y Peso</h6>
+                        <ul>
+                            <li><strong>Longitud:</strong> 4.38 metros</li>
+                            <li><strong>Anchura:</strong> 1.91 metros</li>
+                            <li><strong>Altura:</strong> 1.17 metros</li>
+                            <li><strong>Peso:</strong> 1,422 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="aventadorModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="aventadorModalLabel">Lamborghini Aventador</h5>
+                        <button type="button" class="btn-close" id="aventador" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/aventador.jpg" class="img-fluid mb-3 ms-5" alt="Lamborghini Aventador">
+                        
+                        <h6>Motor y Rendimiento</h6>
+                        <ul>
+                            <li>Motor V12 de 6.5 litros</li>
+                            <li><strong>Potencia:</strong> 730 CV (730 hp) @ 8,400 rpm</li>
+                            <li><strong>Torque:</strong> 690 Nm @ 5,500 rpm</li>
+                            <li><strong>Transmisión:</strong> Automática de 7 velocidades (ISR)</li>
+                            <li><strong>0-100 km/h:</strong> 2.9 segundos</li>
+                            <li><strong>Velocidad máxima:</strong> 350 km/h</li>
+                        </ul>
+        
+                        <h6>Diseño y Aerodinámica</h6>
+                        <ul>
+                            <li>Diseño agresivo con líneas de alta performance</li>
+                            <li>Carrocería de fibra de carbono para reducción de peso</li>
+                            <li>Alas y difusores para una aerodinámica optimizada</li>
+                            <li>Faros delanteros LED y luces traseras en forma de Y</li>
+                        </ul>
+        
+                        <h6>Tecnología y Confort</h6>
+                        <ul>
+                            <li>Sistema de tracción integral</li>
+                            <li>Modos de conducción: Strada, Sport, Corsa</li>
+                            <li>Pantalla táctil de 8.4 pulgadas con Lamborghini Infotainment System</li>
+                            <li>Sistema de sonido premium opcional</li>
+                            <li>Interior de lujo con cuero y Alcántara</li>
+                        </ul>
+        
+                        <h6>Dimensiones y Peso</h6>
+                        <ul>
+                            <li><strong>Longitud:</strong> 4.79 metros</li>
+                            <li><strong>Anchura:</strong> 1.98 metros</li>
+                            <li><strong>Altura:</strong> 1.13 metros</li>
+                            <li><strong>Peso:</strong> 1,575 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </main>
     
@@ -132,8 +247,11 @@
         </div>
     </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lamborghini.js"></script>
+
+
 </body>
 </html>

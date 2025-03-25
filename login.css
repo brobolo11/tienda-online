@@ -8,7 +8,7 @@ body {
     background-size: cover;
 }
 
-.loginContainer {
+.loginContainer, .registerContainer {
     width: 100%;
     max-width: 400px;
 }

@@ -39,9 +39,35 @@ body {
     margin-bottom: 5%;
 }
 
+.contenedor4{
+    background-image: url(images/fondo4.webp);
+    background-size: cover;
+    width: 100%;
+    padding-top: 50%;
+    margin-bottom: 5%;
+}
+
+.contenedor5{
+    background-image: url(images/fondo5.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 50%;
+    margin-bottom: 5%;
+}
+
+.contenedor6{
+    background-image: url(images/fondo6.png);
+    background-size: cover;
+    width: 100%;
+    padding-top: 40%;
+    margin-bottom: 5%;
+}
+
 .contenedorCoche{
     padding: 4%;
 }
+
+
 
 .texto1{
     margin-top: -2%;
@@ -89,11 +115,6 @@ body {
     width: 25%;
 }
 
-.seccionModelo img{
-    height: 80%;
-    width: 100%;
-}
-
 .contenedorModelos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -101,6 +122,7 @@ body {
     padding: 20px;
     width: 90%;
     margin: auto;
+    padding: 5%;
 }
 
 .seccionModelo {

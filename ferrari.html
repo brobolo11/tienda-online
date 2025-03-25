@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light w-100">
+            <div class="container-fluid">    
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <div class="d-flex justify-content-around w-100">
+                        <a href="index.html" class="text-dark text-decoration-none mt-4"><p>HOME</p></a>
+                        <a href="modelos.html" class="text-dark text-decoration-none mt-4"><p>MODELOS</p></a>
+                        <a href="index.html" class="text-dark text-decoration-none mt-3" id="tituloPagina"><p>CROLEX</p></a>
+                        <a href="about.html" class="text-dark text-decoration-none mt-4"><p>ABOUT US</p></a>
+                        
+                        <div class="mt-3">
+                            <i class="bi bi-person text-dark" id="logosHeader"></i>
+                            <i class="bi bi-bag text-dark ms-3" id="logosHeader"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+
+        <div class="contenedor6"></div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/spider.avif" class="ms-3">
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">FERRARI 296 GTS SPIDER</p>
+                <p class="p-1">El Ferrari 296 GTS Spider es un superdeportivo descapotable que redefine la emoción de la conducción al aire libre. Equipado con un motor híbrido V6 biturbo y tecnología de vanguardia, ofrece un equilibrio perfecto entre potencia, eficiencia y dinamismo. Su diseño aerodinámico y su techo retráctil lo convierten en una obra de arte sobre ruedas, ideal para quienes buscan el máximo rendimiento con una experiencia de conducción sin límites.</p>
+                <button class="text-light p-2 text-decoration-none btn-dark btn" id="spider">VER FERRARI 296 GTS SPIDER</button>
+            </div>
+        </div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/roma.webp" class="ms-3">
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">FERRARI ROMA</p>
+                <p class="p-1">El Ferrari Roma es un coupé elegante y sofisticado que representa la combinación perfecta entre rendimiento, lujo y diseño atemporal. Con un motor V8 biturbo de alto rendimiento y una aerodinámica refinada, ofrece una experiencia de conducción emocionante sin sacrificar la comodidad y el estilo. Su diseño minimalista y su interior de vanguardia lo convierten en una opción ideal para quienes buscan la exclusividad de Ferrari en un formato más versátil y refinado.</p>
+                <button class="text-light p-2 text-decoration-none btn-dark btn" id="roma">VER FERRARI ROMA</button>
+            </div>
+        </div>
+
+        <div class="contenedorCoche d-flex">
+            <div class="imageCoche">
+                <img src="images/812.webp" class="ms-3">
+            </div>
+            <div class="textoCoche flex-row mt-4 p-3">
+                <p class="tituloCoche text-center">FERRARI 812 COMPETIZIONE</p>
+                <p class="p-1">El Ferrari 812 Competizione es una versión aún más extrema del 812 Superfast, diseñada para ofrecer un rendimiento sin concesiones. Con un motor V12 atmosférico de altas revoluciones, aerodinámica mejorada y un enfoque en la ligereza, este modelo representa la cúspide de la ingeniería de Ferrari en los GT de motor delantero. Ideal para quienes buscan la máxima potencia, exclusividad y una experiencia de conducción purista.</p>
+                <button class="text-light p-2 text-decoration-none btn-dark btn" id="competizione">VER FERRARI 812 COMPETIZIONE</button>
+            </div>
+        </div>
+
+        <!-- Modal SPIDER -->
+        <div class="modal fade" id="spiderModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="spiderModalLabel">Ferrari 296 GTS Spider</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/spider.avif" class="img-fluid mb-3 ms-5" alt="Ferrari 296 GTS Spider">
+                        
+                        <h6>Motor y Rendimiento</h6>
+                        <ul>
+                            <li>Motor V6 biturbo de 3.0 litros + motor eléctrico</li>
+                            <li><strong>Potencia combinada:</strong> 830 CV</li>
+                            <li><strong>Torque:</strong> 740 Nm</li>
+                            <li><strong>Transmisión:</strong> Automática de 8 velocidades</li>
+                            <li><strong>0-100 km/h:</strong> 2.9 segundos</li>
+                            <li><strong>Velocidad máxima:</strong> Más de 330 km/h</li>
+                        </ul>
+        
+                        <h6>Diseño y Aerodinámica</h6>
+                        <ul>
+                            <li>Carrocería ligera y aerodinámica con líneas elegantes</li>
+                            <li>Techo rígido retráctil que se pliega en solo 14 segundos</li>
+                            <li>Difusores y alerón trasero activos para mayor estabilidad</li>
+                            <li>Faros LED con diseño agresivo y moderno</li>
+                        </ul>
+        
+                        <h6>Tecnología y Confort</h6>
+                        <ul>
+                            <li>Modos de conducción: Hybrid, Performance, Qualify y eDrive</li>
+                            <li>Interior con fibra de carbono y cuero de alta calidad</li>
+                            <li>Instrumentación digital completamente personalizable</li>
+                            <li>Sistema de infoentretenimiento con conectividad avanzada</li>
+                        </ul>
+        
+                        <h6>Dimensiones y Peso</h6>
+                        <ul>
+                            <li><strong>Longitud:</strong> 4.57 metros</li>
+                            <li><strong>Anchura:</strong> 1.95 metros</li>
+                            <li><strong>Altura:</strong> 1.19 metros</li>
+                            <li><strong>Peso:</strong> 1,540 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>              
+
+        <!-- Modal ROMA -->
+        <div class="modal fade" id="romaModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="romaModalLabel">Ferrari Roma</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/roma.webp" class="img-fluid mb-3 ms-5" alt="Ferrari Roma">
+                        
+                        <h6>Motor y Rendimiento</h6>
+                        <ul>
+                            <li>Motor V8 biturbo de 3.9 litros</li>
+                            <li><strong>Potencia:</strong> 620 CV @ 7,500 rpm</li>
+                            <li><strong>Torque:</strong> 760 Nm @ 3,000-5,750 rpm</li>
+                            <li><strong>Transmisión:</strong> Automática de doble embrague y 8 velocidades</li>
+                            <li><strong>0-100 km/h:</strong> 3.4 segundos</li>
+                            <li><strong>Velocidad máxima:</strong> 320 km/h</li>
+                        </ul>
+        
+                        <h6>Diseño y Aerodinámica</h6>
+                        <ul>
+                            <li>Diseño inspirado en los clásicos gran turismo de Ferrari</li>
+                            <li>Líneas elegantes y aerodinámicas con un toque moderno</li>
+                            <li>Alerón trasero activo para optimizar la carga aerodinámica</li>
+                            <li>Faros LED con diseño estilizado y distintivo</li>
+                        </ul>
+        
+                        <h6>Tecnología y Confort</h6>
+                        <ul>
+                            <li>Instrumentación digital con pantalla de 16”</li>
+                            <li>Infoentretenimiento con pantalla táctil de 8.4”</li>
+                            <li>Modos de conducción seleccionables a través del manettino</li>
+                            <li>Materiales premium: cuero, Alcántara y fibra de carbono</li>
+                        </ul>
+        
+                        <h6>Dimensiones y Peso</h6>
+                        <ul>
+                            <li><strong>Longitud:</strong> 4.66 metros</li>
+                            <li><strong>Anchura:</strong> 1.97 metros</li>
+                            <li><strong>Altura:</strong> 1.30 metros</li>
+                            <li><strong>Peso:</strong> 1,472 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 812 -->
+        <div class="modal fade" id="competizioneModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="competizioneModalLabel">Ferrari 812 Competizione</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/812.webp" class="img-fluid mb-3 ms-5" alt="Ferrari 812 Competizione">
+                        
+                        <h6>Motor y Rendimiento</h6>
+                        <ul>
+                            <li>Motor V12 atmosférico de 6.5 litros</li>
+                            <li><strong>Potencia:</strong> 830 CV @ 9,250 rpm</li>
+                            <li><strong>Torque:</strong> 692 Nm @ 7,000 rpm</li>
+                            <li><strong>Transmisión:</strong> Automática de doble embrague y 7 velocidades</li>
+                            <li><strong>0-100 km/h:</strong> 2.85 segundos</li>
+                            <li><strong>Velocidad máxima:</strong> 340 km/h</li>
+                        </ul>
+        
+                        <h6>Diseño y Aerodinámica</h6>
+                        <ul>
+                            <li>Diseño radical con tomas de aire más agresivas</li>
+                            <li>Alerón trasero extendido y difusor optimizado</li>
+                            <li>Capó con generadores de vórtices para mejorar la carga aerodinámica</li>
+                            <li>Uso de fibra de carbono para reducción de peso</li>
+                        </ul>
+        
+                        <h6>Tecnología y Confort</h6>
+                        <ul>
+                            <li>Sistema de dirección en las cuatro ruedas para mayor agilidad</li>
+                            <li>Modos de conducción avanzados con control de tracción optimizado</li>
+                            <li>Pantalla digital de 16” con instrumentación configurable</li>
+                            <li>Asientos deportivos con materiales ultraligeros</li>
+                        </ul>
+        
+                        <h6>Dimensiones y Peso</h6>
+                        <ul>
+                            <li><strong>Longitud:</strong> 4.69 metros</li>
+                            <li><strong>Anchura:</strong> 1.97 metros</li>
+                            <li><strong>Altura:</strong> 1.28 metros</li>
+                            <li><strong>Peso:</strong> 1,487 kg</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+
+    <footer class="piePagina bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>CROLEX</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="stock.html" class="text-light text-decoration-none">Current Stock</a></li>
+                        <li><a href="sellCar.html" class="text-light text-decoration-none">Sell Your Car</a></li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-4 text-center mt-5">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                </div>
+
+                <div class="col-md-4 text-end mt-5">
+                    <p class="mb-0">&copy; 2025 CROLEX. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ferrari.js"></script>
+
+</body>
+</html>
